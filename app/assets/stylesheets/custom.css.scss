@@ -133,6 +133,21 @@ input {
   height: auto !important;
 }
 
+#error_explanation {
+  color: red;
+  ul {
+    color: red;
+    margin: 0 0 30px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .has_error !optional; /* red borders not showing */
+  .form-control {
+      color: $state-danger-text;
+  }
+}
+
 /* sidebar */
 
 aside {
@@ -161,6 +176,8 @@ aside {
   }
 }
 
+/* gravatar */
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -169,3 +186,6 @@ aside {
 .gravatar_edit {
   margin-top: 15px;
 }
+
+
+
